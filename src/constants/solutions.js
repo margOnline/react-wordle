@@ -1,0 +1,20 @@
+const solutions =  [
+  { 'id': 1, 'word': 'ninja' },
+  { 'id': 2, 'word': 'spade' },
+  { 'id': 3, 'word': 'polio' },
+  { 'id': 4, 'word': 'drive' },
+  { 'id': 5, 'word': 'relax' },
+  { 'id': 6, 'word': 'phone' },
+  { 'id': 7, 'word': 'chord' },
+  { 'id': 8, 'word': 'blame' },
+  { 'id': 9, 'word': 'hello' },
+  { 'id': 10, 'word': 'bling' },
+  { 'id': 11, 'word': 'sheet' },
+  { 'id': 12, 'word': 'speed' },
+  { 'id': 13, 'word': 'least' },
+  { 'id': 14, 'word': 'roast' },
+  { 'id': 15, 'word': 'quick' },
+  { 'id': 16, 'word': 'dizzy' }
+]
+
+export default solutions;

@@ -44,7 +44,7 @@ const useWordle = (solution) => {
     })
     setTurn(prevTurn => {
       return prevTurn + 1
-    })
+    })  
     setUsedKeys(prevUsedKeys => {
       formattedGuess.forEach(l => {
         const currentColor = prevUsedKeys[l.key]
@@ -72,21 +72,20 @@ const useWordle = (solution) => {
         console.log('you\'ve used all your guesses!')
         return
       }
-    }
 
-    if (history.includes(currentGuess)) {
-      console.log('you already tried that word.')
-      return
-    }
+      if (history.includes(currentGuess)) {
+        console.log('you already tried that word.')
+        return
+      }
 
-    if (currentGuess.length !== 5) {
-      console.log('word must be 5 characters')
-      return
-    }
+      if (currentGuess.length !== 5) {
+        console.log('word must be 5 characters')
+        return
+      }
 
-    const formatted = formatGuess()
-    addNewGuess()
-    console.log(formatted)
+      const formatted = formatGuess()
+      addNewGuess(formatted)
+    }
 
     if (key === 'Backspace') {
       setCurrentGuess(prev => prev.slice(0, -1))
